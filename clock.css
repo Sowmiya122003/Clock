@@ -1,0 +1,53 @@
+/* Full-screen background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', monospace;
+    background: linear-gradient(-45deg, #667eea, #764ba2, #89f7fe, #66a6ff);
+    background-size: 400% 400%;
+    animation: bgAnimation 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Clock container */
+  .clock-container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  /* Clock display */
+  #clock {
+    font-size: 60px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  /* Toggle button */
+  #toggleFormat {
+    padding: 10px 20px;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  #toggleFormat:hover {
+    transform: scale(1.05);
+  }
+  
+  @keyframes bgAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
